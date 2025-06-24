@@ -1,1 +1,3 @@
-something 
+install:
+  - FILE="-Dfile=digio_sdk_discover-6.0.1.aar"
+  - mvn install:install-file $FILE -DgroupId=in.digio.sdk -DartifactId=discover -Dversion=6.0.1 -Dpackaging=aar -DgeneratePom=true
